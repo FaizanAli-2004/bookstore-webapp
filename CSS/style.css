@@ -1,0 +1,479 @@
+/* Set the font and remove default margin and padding */
+body { 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section , Background color and text color*/
+header {
+    background: white;
+    color: black;
+    padding: 10px 1px;
+}
+
+/* Header container for logo, title, and menu */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+/* Logo styling */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.site-title { /* Center the site title */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 24px;
+}
+
+
+/* Footer section styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-container {  /* Container inside the footer */
+    display: flex; /* Arrange items in a row */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; 
+    gap: 10px;
+}
+
+.footer-links { /* Links inside the footer */
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links a { /* Hover effect for links */
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.footer-links a:hover { /* Hover effect for links */
+    background-color: #555;
+    border-radius: 5px;
+}
+
+footer p { /* Footer text style */
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+/* Navigation Bar styles*/
+nav {
+    background-color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-links { /* Navigation links container */
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {  /* Each navigation item */
+    display: inline-block; /* Makes items sit in a line */
+}
+
+.nav-links li a { /* Navigation link styles */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.nav-links li a:hover { /* Navigation link hover effect */
+    background-color: #555;
+}
+
+
+.menu-toggle { /* Hamburger menu button (hidden by default) */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;  /* Changes cursor to hand */
+    display: none;  /* Hidden on large screens */
+}
+
+/* Book list grid layout */
+#book-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1100px;
+    height: auto; /* Height adjusts to content */
+    margin: auto;
+}
+
+.book { /* Each book item */
+    display: flex;  /* Makes image and text sit side by side */
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #fff;
+}
+
+.book img { /* Book cover images */
+    width: 150px;
+    height: 100%;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.book-info { /* Book information text */
+    text-align: left;
+}
+
+.pay-button { /* Pay button styles */
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 4px;
+    cursor: pointer; /* Changes cursor to hand */
+}
+
+.pay-button:hover { /* Pay button hover effect */
+    background-color: #218838; /* Darker green */
+}
+
+
+
+
+
+/*PAYMENT PAGE STYLES*/
+.sub_heading{ /* Payment sub-heading styles */
+    margin-left: 30px;
+}
+
+.payment-option { /* Payment method display */
+    max-width: 95%; 
+    margin-bottom: 0px;
+    margin-left: 0; 
+    display: flex;
+    align-items: center;
+    margin-top: 2%; 
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.payment-option__image{ /* Payment option image */
+    width: 25%;
+    height: auto;
+}
+
+.payment-option__title { /* Payment option title */
+    display: inline; /* Makes title inline */
+    margin-right: 0px;
+}
+
+.payment-container { /* Payment form container */
+    max-width: 573px;
+    margin: 60px auto;
+    padding: 25px;
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f2f2f2;;;
+}
+
+.payment-container label { /* Form labels */
+    margin-bottom: 5px;
+    font-weight: bold; /* Makes text bold */
+}
+
+.payment-container input { /* Form input fields */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #cccccc; /* Light gray border */
+}
+
+#payment-feedback { /* Payment feedback message area */
+    margin-top: 15px;
+}
+/* Card Number, Expiry date and CVV input */
+#cardnumber{
+ margin-left: 26px;
+ width: 300px;
+}
+
+#expiry-row { /* Expiry date row */
+    display: inline;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+
+#expMonth{ /* Month dropdown */
+    width: 150px;
+    height: 30px;
+  }
+
+#expYear{ /* Year dropdown */
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+  }
+
+#cvv{ 
+    margin-left: 93px;
+    margin-top: 15px;
+    width: 130px;
+    height: 10px;
+    margin-bottom: 0px;
+ }
+
+#tip_text{ /* CVV help text */
+    margin-left: 130px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    
+}
+
+.continue-btn { /* Continue button */
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 130px;
+    width: 150px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    
+  }
+  
+  .payment-container button:hover { /* Continue Button hover effect */
+    background-color: #005fa3;
+}
+
+/* Error state for input fields (will turn border to RED to highlight) */
+.payment-container input.error,
+.payment-container select.error {
+    border-color: red;
+}
+
+ 
+
+
+/* Success Page */
+#message{ /* Success message */
+    font-weight: bold;
+}
+#mastercard_image{ /* Mastercard image */
+    width: 80px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+
+
+/* Responsive styles for medium screens */
+@media (min-width: 875px) and (max-width: 906px){
+    .book img { /* Adjusts book image size */
+        width: 150px;
+        height: 85%;
+        margin-right: 10px;
+    }
+    .book-info {
+        text-align: left;
+        font-size: 16px;
+    }
+}
+ 
+/* Responsive styles for medium screens */
+@media (min-width: 769px) and (max-width: 875px){
+    .book img {
+        width: 150px;
+        height: 87%;
+        margin-right: 10px;
+    }
+    .book-info {
+        text-align: left;
+        font-size: 16px;
+    }
+}
+
+/* Responsive styles for tablets */
+@media (min-width:539px) and  (max-width: 768px) {
+    .book img { /* Adjusts book image size */
+        width: 150px;
+        height: 90%;
+        margin-right: 10px;
+    }
+
+    .book-info {
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .header-container {  /* Adjusts header layout */
+        justify-content: space-between;
+    }
+
+    .menu-toggle {  /* Shows hamburger menu */
+        display: block;
+        color: white;
+    }
+    .site-title{ /* Makes title smaller */
+        font-size: 18px;
+    }
+    
+    header{ /* Changes header color */ 
+        background: #1d1c1c;
+        color: white;
+    }
+
+    .nav-links { /* Hides regular navigation */
+        display: none;
+        flex-direction: column;  /* Stacks vertically */
+        background-color: #333;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active { /* Shows navigation when active */
+        display: flex;
+    }
+
+    .nav-links li {  /* Full width navigation items */
+        width: 100%;
+    }
+
+    #book-list { /* Single column book list */
+        grid-template-columns: 1fr;
+    }
+
+    .payment-option__image{ /* Adjusts payment image size */
+        width: 37%;
+        height: auto;
+    }
+}
+
+/* Responsive styles for mobile phones */
+@media (max-width: 539px) {
+    /*similar to tablet sizes expect more smaller. */
+    .book img {
+        width: 150px;
+        height: 84%;
+        margin-right: 10px;
+    }
+
+    .book-info {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .header-container {
+        justify-content: space-between;
+    }
+
+    .menu-toggle { /* Shows hamburger menu */
+        display: block;
+        color: white;
+    }
+    .site-title{
+        font-size: 18px;
+    }
+
+    header{
+       
+        background: #1d1c1c;
+        color: white;
+    } 
+
+    .nav-links { /* Hides regular navigation */
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    #book-list {
+        grid-template-columns: 1fr;
+    }
+
+    #paymentForm { /* Stacks form items vertically */
+        display: flex;
+        flex-direction: column; 
+        
+    }
+    .payment-container { /* Adjusts payment container */
+        max-width: 573px;
+        margin: 60px 15px;
+        margin-top: 3px;
+        
+    }
+
+    /*Adjust card numbers, cvv, tip,text and a continue button */
+    #cardnumber{
+        margin-left: 12px;
+        width: 200px;
+        height: 10px;
+       }
+    #cvv{
+        margin-left: 2%;
+        margin-top: 2px;
+        width: 130px;
+        height: 10px;
+        margin-bottom: 0px;
+     }
+    
+    #tip_text{
+        margin-left: 2%;
+        margin-top: 4px;
+        margin-bottom: 0px;
+        
+    }
+    .payment-option__image{
+        width: 40%;
+        height: auto;
+        
+    }
+    .continue-btn {
+        
+        padding: 10px;
+        margin-left: 2%;
+        width: 130px;
+        margin-top: 3px;
+        margin-bottom: 0px;
+        
+      }
+}
