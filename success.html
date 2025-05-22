@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Success Page</title> <!-- Title of success page shown in browser tab -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <script defer src="Javascript/site.js"></script>
+</head>
+<body>
+  <!-- HEADER (same as home.html) -->
+  <header>
+        <div class="header-container">
+            <a href="index.html">
+            <img src="Images/logo.png" alt="Bookshop Logo" class="logo"> <!-- Website logo -->
+            </a>
+            <h1 class="site-title">Faizan Bookshop</h1>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+        
+        <!-- Navigation bar (same as home.html) -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+  <main > <!-- Confirmation section(success Page) after successful payment -->
+    <h2 class="sub_heading">You have successfully entered your credit card details</h2>
+
+    <!-- Display the image of type of card used(in this case, it is masterCard) -->
+    <div class="payment-option">
+      <h3 class="payment-option__title">Debit / Credit Card</h3>
+       <img src="Images/mastercard.jpg" id="mastercard_image" alt="MasterCard">
+      </div>
+
+      <!-- Container for payment confirmation details -->
+    <div class="payment-container"> 
+      <div id="lastFourDisplay"></div> <!-- Empty Div where the last 4 digits of card will be shown -->
+    <div  id="message"></div> <!-- Where success messages(from server) will appear -->
+    </div>
+  </main>
+  
+</body>
+</html>

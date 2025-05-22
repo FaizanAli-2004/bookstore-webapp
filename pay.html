@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Page</title> <!-- Title of this page shown in browser tab -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <script defer src="Javascript/site.js"></script>
+</head>
+<body>
+<!-- HEADER (same as home.html) -->
+<header>
+        <div class="header-container">
+            <a href="index.html">
+            <img src="Images/logo.png" alt="Bookshop Logo" class="logo"> <!-- Website logo -->
+            </a>
+            <h1 class="site-title">Faizan Bookshop</h1>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </div>
+        
+        <!-- Navigation bar (same as home.html) -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main >
+  <h2 class="sub_heading">Payment Options</h2> <!-- Sub-heading of the page -->
+  <!-- Section for showing payment option (debit/credit card and image of accepted cards)-->
+  <div class="payment-option">
+  <h3 class="payment-option__title">Debit / Credit Card</h3>
+  <img src="Images/accepted_cards.png" class="payment-option__image" alt="Accepted Cards"> <!-- Image showing accepted card types -->
+</div>
+
+  <!-- Container for the payment form -->
+  <div class="payment-container">
+  <form id="paymentForm"> <!-- Form for entering card details -->
+    <!-- Card number input -->
+    <label for="cardnumber">Card Number</label>
+    <input type="text" id="cardnumber" placeholder="XXXX XXXX XXXX XXXX"  required /> <br>
+
+    <label id="expiry_label">Expiration Date</label> <!-- Expiration date section -->
+    <div id="expiry-row">
+      <select id="expMonth" required> <!-- Month dropdown (will be filled by JavaScript) -->
+        <option value="">Month</option>
+        <!--  Months will be filled by JS -->
+      </select>
+      <select id="expYear" required>
+        <option value="">Year</option> <!-- Year dropdown (will be filled by JavaScript) -->
+        <!-- Years will be filled by JS -->
+      </select>
+    </div> <br>
+
+    <label for="cvv">CVV</label> <!-- Security code input -->
+    <input type="text" id="cvv" placeholder="123"  required />
+    <p id="tip_text">(3–4 digits normally on back of card)</p> <br> <!-- Help text about where to find CVV -->
+
+    <button type="submit" class="continue-btn">Continue</button> <!-- Submit button -->
+    <div id="payment-feedback"></div> <!-- Empty div where payment feedbacks will appear -->
+  </form>
+</div>
+</main>
+</body>
+</html>

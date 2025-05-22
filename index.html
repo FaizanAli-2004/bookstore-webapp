@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic setup for the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes page work on phones too -->
+    <title>Home Page</title> <!-- Title shown in browser tab -->
+    <!-- Links to CSS and JavaScript files -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="Javascript/site.js"></script>
+</head>
+<body>
+    <!-- Header section with logo, title, and menu button -->
+    <header>
+        <div class="header-container">
+            <a href="index.html"> <!-- clickable logo to get back on Home Page -->
+            <img src="Images/logo.png" alt="Bookshop Logo" class="logo"> <!-- Website logo -->
+            </a>
+            <h1 class="site-title">Faizan Bookshop</h1> <!-- Website title -->
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button> <!-- Button to open menu on mobile -->
+        </div>
+        
+        <!-- Navigation bar with links to other pages -->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content section with book information -->
+     <main>
+        <section id="book-list"> <!-- Section that holds all the books -->
+            <!-- First book: Pride and Prejudice -->
+            <div class="book"> 
+                <img src="Images/Pride_Pre_book.jpg" alt="Pride and Prejudice Book">
+                <div class="book-info"> 
+                    <h2>Pride and Prejudice </h2> <!-- Book title -->
+                    <!-- Book description -->
+                    <p>A timeless romance that follows Elizabeth Bennet, a sharp-witted young woman who initially dislikes the 
+                        proud and wealthy Mr. Darcy. As misunderstandings and social expectations threaten their love, Elizabeth 
+                        learns to look beyond first impressions. The novel explores themes of class, marriage, and personal growth
+                         in early 19th-century England.
+                        By ~ <strong><em>Jane Austen</em></strong>
+                    </p>
+                    <button class="pay-button">Pay</button> <!-- Button to buy the book -->
+                </div>
+            </div>
+
+            <div class="book"> <!-- Second book: Lord of the Flies -->
+                <img src="Images/Lord_Flies_book.jpg" alt="Lord of the Flies Book">
+                <div class="book-info">
+                    <h2>Lord of the Flies</h2>
+                    <p>A gripping novel about a group of boys stranded on an uninhabited island, where they must fend for 
+                        themselves. What begins as an attempt to establish order soon descends into chaos and savagery as the boys'
+                         primal instincts take over. The novel explores themes of civilization, human nature, and the thin line between 
+                         order and anarchy.
+                        By ~<strong><em>William Golding</em></strong>
+                    </p>
+                    <button class="pay-button">Pay</button>
+                </div>
+            </div>
+
+            <div class="book">  <!-- Third book: The Great Gatsby -->
+                <img src="Images/Gatsby_book.jpg" alt="The Great Gatsby Book">
+                <div class="book-info">
+                    <h2>The Great Gatsby</h2>
+                    <p>A novel about the extravagance and emptiness of the Jazz Age, centered around the mysterious millionaire Jay Gatsby and his longing 
+                        for his lost love, Daisy Buchanan. Narrated by Nick Carraway, the story explores the corruption of the American Dream, wealth, 
+                        and social status, leading to a tragic and thought-provoking ending.
+                        By ~ <strong><em>F. Scott Fitzgerald</em></strong>
+                    </p>
+                    <button class="pay-button">Pay</button> 
+                </div>
+            </div>
+
+            <div class="book"> <!-- Fourth book: Jane Eyre -->
+                <img src="Images/Jane_Eyre_book.jpg" alt="Jane Eyre Book">
+                <div class="book-info">
+                    <h2>Jane Eyre</h2>
+                    <p>The story of Jane Eyre, an orphan who overcomes a harsh childhood to become a strong, independent woman. She finds work as a 
+                        governess and falls in love with her mysterious employer, Mr. Rochester, but his dark secrets threaten their happiness. 
+                        The novel is a powerful exploration of love, morality, and female resilience in a rigid Victorian society.
+                        By ~ <strong><em>Charlotte Bronte</em></strong>
+                    </p>
+                    <button class="pay-button" >Pay</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+<footer>
+    <div class="footer-container"> <!-- Container for footer content -->
+        <div class="footer-links"> <!-- Links in the footer -->
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <!-- Footer text with copyright information -->
+        <p>&copy; 2025 My Bookshop. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
